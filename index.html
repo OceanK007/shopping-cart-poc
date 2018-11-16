@@ -12,48 +12,14 @@
             <div class="row">
                 <div class="col-lg-12">
                     <hr>
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">3 ITEMS</div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">SIZE</div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1">QTY</div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1">PRICE</div>
-                    </div>
+                    <div class="row" id="cart-header"></div>
                     <hr style="border: none;height: 6px;color:rgba(0, 0, 0, 0.1);background-color:rgba(0, 0, 0, 0.1)">
                     <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
-                            <div class="row">
-                                <div class="col-lg-11 col-md-11 col-sm-11 col-11">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-                                            <img class="img-fluid" alt="t-shirt" src="https://image.spreadshirtmedia.com/image-server/v1/mp/productTypes/210/views/1/appearances/228,width=450,height=450,backgroundColor=e8e8e8.jpg">
-                                        </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
-                                            <div class="row h-100">
-                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0">
-                                                    <div style="font-size: 1rem; font-weight: bold">SOLID BLACK COTTON TSHIRT</div>
-                                                    <div style="font-size: .7rem">Style #: MS13KT1906</div>
-                                                    <div style="font-size: .7rem">Color: Black</div>
-                                                </div>
-                                                <div style="font-size: .7rem" class="col-lg-12 col-md-12 col-sm-12 col-12">  
-                                                    <div class="row h-100 align-items-end">
-                                                        <span class="mb-1">
-                                                            <a href="#">EDIT</a> | 
-                                                            <a href="#">X REMOVE</a> | 
-                                                            <a href="#">SAVE FOR LATER</a>
-                                                        </span>
-                                                    </div>      
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">S</div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1"><input type="text" value="1" class="quantity-input" readonly></div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1">$17</div>
+                        <div class="col-lg-12" id="cart-products"></div>
                     </div>
-                    <hr>
+                    
+                    
+                    
                     <hr style="border: none;height: 6px;color:rgba(0, 0, 0, 0.1);background-color:rgba(0, 0, 0, 0.1)">
                     <div class="row">
                         <div class="col-3">
@@ -73,47 +39,7 @@
                                     <hr style="border: none;height: 6px;color:rgba(0, 0, 0, 0.1);background-color:rgba(0, 0, 0, 0.1)">
                                 </div>                                    
                             </div>                            
-                            <div class="row">
-                                <div class="col-10 offset-2">
-                                    <div class="row">
-                                        <div class="col-10">SUBTOTAL</div>
-                                        <div class="col-2 text-right">$37.00</div>
-                                    </div> <br>
-                                    <div class="row">
-                                        <div class="col-10">PROMOTION CODE <b>JF10</b> APPLIED</div>
-                                        <div class="col-2 text-right">-$7.00</div>
-                                    </div> <br>
-                                    <div class="row">
-                                        <div class="col-10">
-                                            <span>ESTIMATED SHIPPING*</span><br>
-                                            <span style="font-size: .7rem">You qualify for free shipping because your order is over $50*</span>
-                                        </div>
-                                        <div class="col-2 text-right">FREE</div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-10">
-                                            <span>ESTIMATED TOTAL</span><br>
-                                            <span style="font-size: .7rem">Tax will be applied during checkout</span>
-                                        </div>
-                                        <div class="col-2 text-right">$30.00</div>
-                                    </div>
-                                    <hr style="border: none;height: 6px;color:rgba(0, 0, 0, 0.1);background-color:rgba(0, 0, 0, 0.1)">
-                                    <div class="row">
-                                        <div class="col-9 text-right">
-                                            <a href="#">CONTINUE SHOPPING</a>
-                                        </div>
-                                        <div class="col-3 text-right">
-                                            <button class="btn btn-primary">CHECKOUT</button>
-                                        </div>
-                                    </div><br>
-                                    <div class="row">
-                                        <div class="col-12 text-right">
-                                            <span style="font-size: .7rem">Secure checkout. Shopping is always safe & secure</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="row" id="checkout"></div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +47,7 @@
         </div>
 
         <!-- Large modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
 
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">            
@@ -139,9 +65,9 @@
                                 <div class="col-10 offset-1 text-center">
                                     <hr style="border: none;height: 6px;color:rgba(0, 0, 0, 0.1);background-color:rgba(0, 0, 0, 0.1)">
                                     <br>
-                                    <span>PAISLEY JEANS</span>
+                                    <span id="modal_product_name">PAISLEY JEANS</span>
                                     <br>
-                                    <h1 style="font-size: 3rem">$21</h1>
+                                    <h1 style="font-size: 3rem" id="modal_product_price">$21</h1>
                                     <br><br>
                                     <span style="font-size: .8rem">PAISLEY</span>
                                     <br>
@@ -154,6 +80,10 @@
                                     <br><br>
                                     <select style="width:80px;height:40px">
                                         <option>Size</option>
+                                        <option>MEDIUM</option>
+                                        <option>LARGE</option>
+                                        <option>XTRA LARGE</option>
+                                        <option>XTRA XTRA LARGE</option>
                                     </select>
                                     <select style="width:80px;height:40px">
                                         <option>QTY: 1</option>
@@ -166,7 +96,7 @@
                             </div>
                         </div>
                         <div class="col-7">
-                            <img class="img-fluid" alt="t-shirt" src="https://image.spreadshirtmedia.com/image-server/v1/mp/productTypes/210/views/1/appearances/228,width=450,height=450,backgroundColor=e8e8e8.jpg">
+                            <img class="img-fluid" alt="t-shirt" id="modal_product_image" src="https://image.spreadshirtmedia.com/image-server/v1/mp/productTypes/210/views/1/appearances/228,width=450,height=450,backgroundColor=e8e8e8.jpg">
                         </div>
                     </div>
                 </div>

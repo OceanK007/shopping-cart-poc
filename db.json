@@ -1,0 +1,52 @@
+{
+    "cart": 
+    [
+        { 
+            "id": 1,             
+            "productId": "MS13KT1906",
+            "productName": "SOLID BLACK COTTON T-SHIRT", 
+            "productDetails": "A simple cotton t-shirt for men and women",
+            "imageURL": "https://image.spreadshirtmedia.com/image-server/v1/mp/productTypes/210/views/1/appearances/228,width=450,height=450,backgroundColor=e8e8e8.jpg",
+            "brand": "LEVIS",
+            "color": "Black",
+            "price": 11,
+            "quantity": 5,
+            "size": "L"
+        },
+        { 
+            "id": 2,             
+            "productId": "MS13KT1907",
+            "productName": "SUPER MAN T-SHIRT", 
+            "productDetails": "Super man t-shirt for men only",
+            "imageURL": "https://cdn.shopify.com/s/files/1/2068/9901/products/product-image-271847770_spo_1024x1024.jpg?v=1512323943",
+            "brand": "LEVIS",
+            "color": "Black",
+            "price": 21,
+            "quantity": 10,
+            "size": "M"
+        },
+        { 
+            "id": 3,             
+            "productId": "MS13KT1908",
+            "productName": "TEAM JESUS T-SHIRT", 
+            "productDetails": "A simple cotton t-shirt for men and women",
+            "imageURL": "https://images-na.ssl-images-amazon.com/images/I/61aMGvnvdbL._UX522_.jpg",
+            "brand": "LEVIS",
+            "color": "Brown",
+            "price": 31,
+            "quantity": 15,
+            "size": "L"
+        }
+    ],
+    "promocode":
+    [
+        {
+            "id": "ABCDEF",
+            "amount": 10
+        },
+        {
+            "id": "GHIKJL",
+            "amount": 7
+        }
+    ]
+  }
