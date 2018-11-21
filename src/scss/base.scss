@@ -8,7 +8,17 @@ html
 {
     font-size: 1rem;
 }
-  
+
+a 
+{
+    color: #0051A3;
+}
+
+.btn-primary 
+{
+    background-color: #0051AD;
+}
+
 @include media-breakpoint-down(sm) 
 {
     html 

@@ -104,7 +104,7 @@ function createProduct(prod) {
       </div>
   </div>
   <div class="col-lg-2 col-md-2 col-sm-2 col-2" id="size_${prod.id}">${prod.size}</div>
-  <div class="col-lg-1 col-md-1 col-sm-1 col-1"><input type="text" value="1" class="quantity-input" readonly></div>
+  <div class="col-lg-1 col-md-1 col-sm-1 col-1"><input aria-label="count" type="text" value="1" class="quantity-input" readonly></div>
   <div class="col-lg-1 col-md-1 col-sm-1 col-1" id="price_${prod.id}">$${prod.price}</div>
   </div>`,
   );
