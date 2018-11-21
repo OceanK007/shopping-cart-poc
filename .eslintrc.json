@@ -18,6 +18,7 @@
         "allowEmptyReject": true,
         "no-param-reassign": 0,
         "no-use-before-define": 0,
-        "class-methods-use-this": 0
+        "class-methods-use-this": 0,
+        "prefer-destructuring": 0
     }
 }

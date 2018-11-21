@@ -2,6 +2,9 @@ import createHTMLElement from './service';
 import { DataService } from './data.service';
 import { Product } from './product.model';
 
+// Creating map to hold product data
+var productMap = {};
+
 // Creating element.
 function createElement(name) {
   const element = createHTMLElement(`<h1><span>Hello ${name}<span></h1>`);
@@ -44,12 +47,20 @@ async function getCartProducts() {
   products.forEach((e) => {
     // console.log(e);
     const prod = new Product(e.id, e.productId, e.productName, e.productDetails,
-      e.imageURL, e.brand, e.color, e.price, e.quantity, e.size);
-    // console.log(prod);
+      e.imageURLs, e.brand, e.color, e.price, e.quantity, e.size);
+    //console.log(prod);
     productArray.push(prod);
+
+    productMap[e.id] = prod;
   });
 
+  //console.log(productMap);
+
   return productArray;
+}
+
+function getProductByKey(key) {
+  return productMap[key];
 }
 
 function createHeader(size) {
@@ -68,7 +79,7 @@ function createProduct(prod) {
           <div class="col-lg-11 col-md-11 col-sm-11 col-11">
               <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-                      <img class="img-fluid" alt="t-shirt" id="image_${prod.id}" src="${prod.imageURL}">
+                      <img class="img-fluid" alt="t-shirt" id="image_${prod.id}" src="${prod.imageURLs[0]}">
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                       <div class="row h-100">
@@ -103,11 +114,16 @@ function createProduct(prod) {
 
     const modalProductNameRef = document.getElementById('modal_product_name');
     const modalProductPriceRef = document.getElementById('modal_product_price');
-    const modalProductImageRef = document.getElementById('modal_product_image');
+    const modalProductImageRef1 = document.getElementById('modal_product_image1');
+    const modalProductImageRef2 = document.getElementById('modal_product_image2');
+    const modalProductImageRef3 = document.getElementById('modal_product_image3');
 
-    modalProductNameRef.innerHTML = document.getElementById(`name_${id}`).innerText;
-    modalProductPriceRef.innerHTML = document.getElementById(`price_${id}`).innerText;
-    modalProductImageRef.src = document.getElementById(`image_${id}`).src;
+    const product = getProductByKey(id);
+    modalProductNameRef.innerHTML = product.productName;
+    modalProductPriceRef.innerHTML = product.price;
+    modalProductImageRef1.src = product.imageURLs[0];
+    modalProductImageRef2.src = product.imageURLs[1];
+    modalProductImageRef3.src = product.imageURLs[2];
   });
 
   productElement.querySelector(`#remove_${prod.id}`).addEventListener('click', (event) => {

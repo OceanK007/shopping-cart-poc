@@ -6,7 +6,12 @@
             "productId": "MS13KT1906",
             "productName": "SOLID BLACK COTTON T-SHIRT", 
             "productDetails": "A simple cotton t-shirt for men and women",
-            "imageURL": "https://image.spreadshirtmedia.com/image-server/v1/mp/productTypes/210/views/1/appearances/228,width=450,height=450,backgroundColor=e8e8e8.jpg",
+            "imageURLs": 
+            [
+                "https://image.spreadshirtmedia.com/image-server/v1/mp/productTypes/210/views/1/appearances/228,width=450,height=450,backgroundColor=e8e8e8.jpg",
+                "https://uniqlo.scene7.com/is/image/UNIQLO/goods_09_180704?$prod$",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYg6EZFEqjQmS0oAbWNDBKc1Xc7AIlfvSbWyqt-fbXLhYCzl_s"
+            ],
             "brand": "LEVIS",
             "color": "Black",
             "price": 11,
@@ -18,7 +23,12 @@
             "productId": "MS13KT1907",
             "productName": "SUPER MAN T-SHIRT", 
             "productDetails": "Super man t-shirt for men only",
-            "imageURL": "https://cdn.shopify.com/s/files/1/2068/9901/products/product-image-271847770_spo_1024x1024.jpg?v=1512323943",
+            "imageURLs":
+            [
+                "https://cdn.shopify.com/s/files/1/2068/9901/products/product-image-271847770_spo_1024x1024.jpg?v=1512323943",
+                "https://static5.cilory.com/238653-large_default/black-superman-t-shirt.jpg",
+                "https://i.etsystatic.com/17403593/r/il/933c17/1489307578/il_570xN.1489307578_ogxd.jpg"
+            ],
             "brand": "LEVIS",
             "color": "Black",
             "price": 21,
@@ -30,7 +40,12 @@
             "productId": "MS13KT1908",
             "productName": "TEAM JESUS T-SHIRT", 
             "productDetails": "A simple cotton t-shirt for men and women",
-            "imageURL": "https://images-na.ssl-images-amazon.com/images/I/61aMGvnvdbL._UX522_.jpg",
+            "imageURLs": 
+            [
+                "https://images-na.ssl-images-amazon.com/images/I/61aMGvnvdbL._UX522_.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/71dSSFUy-EL._UX385_.jpg",
+                "https://i5.walmartimages.com/asr/ea5429c5-0978-4e17-9416-b95351a8c676_1.e7c0f73b7f22242fe3a0b3e450b872f9.jpeg"
+            ],
             "brand": "LEVIS",
             "color": "Brown",
             "price": 31,
@@ -49,4 +64,4 @@
             "amount": 7
         }
     ]
-  }
+}

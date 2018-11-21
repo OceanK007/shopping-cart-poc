@@ -4,7 +4,7 @@ export class Product {
     productId,
     productName,
     productDetails,
-    imageURL,
+    imageURLs,
     brand,
     color,
     price,
@@ -15,7 +15,7 @@ export class Product {
     this.productId = productId;
     this.productName = productName;
     this.productDetails = productDetails;
-    this.imageURL = imageURL;
+    this.imageURLs = imageURLs;
     this.brand = brand;
     this.color = color;
     this.price = price;
